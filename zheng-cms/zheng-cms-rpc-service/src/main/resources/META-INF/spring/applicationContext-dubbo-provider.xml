@@ -9,7 +9,8 @@
 
     <dubbo:application name="zheng-cms-rpc-service"/>
 
-    <dubbo:registry address="zookeeper://zkserver:2181"/>
+    <!-- 修改zookeeper的地址 -->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183"/>
 
     <dubbo:protocol name="dubbo" port="20882"/>
 
