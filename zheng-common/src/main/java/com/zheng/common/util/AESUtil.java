@@ -129,9 +129,8 @@ public class AESUtil {
 
     public static void main(String[] args) {
         String[] keys = {
-                "", "123456"
+                "root", "PGou8899*"
         };
-        System.out.println("key | AESEncode | AESDecode");
         for (String key : keys) {
             System.out.print(key + " | ");
             String encryptString = AESEncode(key);
